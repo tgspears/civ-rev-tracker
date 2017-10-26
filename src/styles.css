@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/*$navy-blue: #121C44;
+$gold-yellow: #C1A70F;
+$dark-grey: #323542;
+$light-blue: #0B90D7;
+$periwinkle: #95ADED;*/
+
+body {
+  background-image: url("/assets/images/lincoln_landing_page.jpg");
+  background-size: 100%;
+}

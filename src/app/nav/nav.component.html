@@ -1,0 +1,39 @@
+<nav>
+  <div class="nav-wrapper">
+    <a class="brand-logo left"><img src="./assets/images/civrev_logo.png"></a>
+    <ul id="nav" class="right">
+      <li><a *ngIf="loggedIn" (click)="logOut()" routerLink="/welcome" class="waves-effect waves-light btn">Log Out</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div *ngIf="!loggedIn" class="row">
+  <div class="spacer col-s12"></div> 
+  <form class="col s4 offset-s4">
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="email" type="email" class="validate">
+        <label for="email">Email</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="password" type="password" class="validate">
+        <label for="password">Password</label>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngIf="showConfirmPasswordField" class="input-field col s12">
+        <input value="" id="confirm-password" type="text" class="validate">
+        <label for="confirm-password">Confirm Password</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column s-12 center-align">
+        <a (click)="signUpShow()" *ngIf="showConfirmPasswordField" class="waves-effect waves-light btn">Sign In</a>
+        <a (click)="signUpHide()" *ngIf="!showConfirmPasswordField" class="waves-effect waves-light btn">Sign Up</a>
+        <a (click)="logIn()" routerLink="/dashboard" class="waves-effect waves-light btn">Submit</a>
+      </div>
+    </div>
+  </form>
+</div>
