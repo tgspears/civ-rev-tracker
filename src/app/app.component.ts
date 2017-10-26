@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CRTNavComponent } from './nav/nav.component';
 
 @Component({
   selector: 'app-root',
