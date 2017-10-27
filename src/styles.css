@@ -8,7 +8,11 @@ $dark-grey: #323542;
 $light-blue: #0B90D7;
 $periwinkle: #95ADED;*/
 
-body {
-  background-image: url("/assets/images/lincoln_landing_page.jpg");
-  background-size: 100%;
+body > img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
