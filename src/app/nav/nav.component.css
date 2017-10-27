@@ -1,5 +1,6 @@
 nav img {
-	height: 60px;
+	max-width: 100%;
+  max-height: 60px;
 }
 
 form {
@@ -9,4 +10,8 @@ form {
 
 .spacer {
   height: 8vh;
+}
+
+.brand-logo {
+  margin-top: 5px;
 }
